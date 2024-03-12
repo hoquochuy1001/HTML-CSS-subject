@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--<link rel="stylesheet" href="../bootstrap-3.1.1-dist/css/bootstrap.min.css">
+    <script src="../jquery-3.3.1.min.js"></script>
+    <script src = "../bootstrap-3.1.1-dist/js/bootstrap.min.js"></script>-->
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src = "../js/bootstrap.min.js"></script>
+    <script src = "../js/huy.js"></script>
+
+    <title>Ho Quoc Huy</title>
+</head>
+<body>
+    <div class="container">
+        <div class = "row border">
+            <div class = row>
+                <img src = "../Anh/designers-header.jpg" width="100%" alt="">
+            </div>
+        </div>
+
+        <div class = "row border">
+            <nav class = "navbar-expand-md">
+                <ul class = "navbar-nav">
+                    <li class="nav-item"><a href="#" class="nav-link">Trang Chu</a></li>
+                    <li class="nav-item" id="nhapSach"><a href="#" class="nav-link">Nhap Nhan Vien</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="row">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Họ Tên</th>
+                        <th>Mã Nhân Viên</th>
+                        <th>Email</th>
+                        <th>Ngày Sinh</th>
+                        <th>Tuổi</th>
+                        <th>SĐT</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="navbar justify-content-center">Ho Quoc Huy-20053561</h4>
+            </div>
+        </div>
+
+        <div>
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <h5>Nhap Nhan Vien</h5>
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <span id="thongBao"></span>
+                                </div>
+                            </div>
+
+                            <!--form-->
+                            <form action="">
+                                <!--ten nv-->
+                                <div class="form-group">
+                                    <label for=""><h6>Ho Ten</h6></label>
+                                    <input type="text" id="Name" required placeholder="ex: Ho Quoc Huy" class="form-control">
+                                    <span id="tbhoTen">(*)</span>
+                                </div>
+
+                                <!--ma nv-->
+                                <div class="form-group">
+                                    <label for=""><h6>Ma nhan vien</h6></label>
+                                    <input type="text" id="MaNV" required placeholder="ex: VN-123-4567" class="form-control">
+                                    <span id="tbMaNV">(*)</span>
+                                </div>
+
+                                <!--email-->
+                                <div class="form-group">
+                                    <label for=""><h6>Email</h6></label>
+                                    <input type="text" id="Email" required placeholder="ex: xxx@vtv.com.vn" class="form-control">
+                                    <span id="tbEmail">(*)</span>
+                                </div>
+
+                                <!--ngay sinh-->
+                                <div class="form-group">
+                                    <label for=""><h6>Ngay Sinh</h6></label>
+                                    <input type="date" id="NgaySinh" class="form-control">
+                                    <span id="tbNgaySinh">(*)</span>
+                                </div>
+
+                                <!--tuoi-->
+                                <div class="form-group">
+                                    <label for=""><h6>Tuoi</h6></label>
+                                    <input type="text" id="Tuoi" required placeholder="18-60" class="form-control">
+                                    <span id="tbTuoi">(*)</span>
+                                </div>
+                                
+                                <!--sdt-->
+                                <div class="form-group">
+                                    <label for=""><h6>SDT</h6></label>
+                                    <input type="tel" id="SDT" required placeholder="0XX-XXXX-XXX" class="form-control">
+                                    <span id="tbSDT">(*)</span>
+                                </div>
+
+                                <button id="nhapDS" class="btn btn-secondary" type="button">Nhap vao danh sach</button>
+                            </form>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="close" data-dismiss="modal">Close</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
